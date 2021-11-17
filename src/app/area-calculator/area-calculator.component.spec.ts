@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { async ,ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AreaCalculatorComponent } from './area-calculator.component';
 
@@ -22,4 +22,17 @@ describe('AreaCalculatorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Should call calcular.area  method', () => {
+ 
+    let result;
+    component.b1 = 3;
+    component.b2 =6
+    component.a = 8;
+
+    component.calcular_area();
+    result = component.area;
+
+    expect(result).toBe(9);
+ });
 });
