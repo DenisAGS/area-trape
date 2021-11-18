@@ -1,51 +1,41 @@
-<div class="container d-flex align-items-center justify-content-center wh-100 shadow p-5" style="margin-top:100px;">
-    <div class="row">
+<div class="container d-flex align-items-center justify-content-center wh-100 shadow p-8" style="margin-top:100px;">
+    <div class="card" id="contenedor5">
         
-           <div class="col-8 ">
+           <div class="col-8 " id="contenedor4">
                 <div class="row">
                     <div class="col-12">
                         <h1>Area del trapecio</h1>
                     </div>
                 </div> 
 
-                <div class="row">
-                    <div class="col-12">
-                        <form class="row g-3 p-5">
-                            <div class="col-3">
-                                <input type="text" class="form-control operator1" style ="text-align:right" placeholder="Altura" id="a"  name="a" [(ngModel)]="a" >
-                            </div>
-                            <div class="col-1">
-                                <h6>*</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>(</h6>
-                            </div>
-                            <div class="col-3">
-                                <input type="text" class="form-control operator1" style ="text-align:right" placeholder="Base1" id="b1"  name="b1" [(ngModel)]="b1" >
-                            </div>
-                            <div class="col-1">
-                                <h6>+</h6>
-                            </div>
-                            <div class="col-3">
-                                <input type="text" class="form-control operator2" style ="text-align:right" placeholder="Base2" id="altura" name="altura" [(ngModel)]="altura">
-                            </div>
-                            <div class="col-1">
-                                <h6>)/2</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>=</h6>
-                            </div>
-                            <div class="col-4">
-                                <label class="form-control result " style ="text-align:right">{{ areaT }}</label>
-                            </div>
-                        </form>
+                <form class="row g-3 p-7">
+                    <div class="col-auto">
+                        <input type="text" class="form-control a" style ="text-align:right" placeholder="Altura" id="a" [(ngModel)]="a" name="a">
                     </div>
-                </div> 
+                    <div class="col-auto">
+                        <h1>* (</h1>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control b1" style ="text-align:right" placeholder="Base 1" id="b1" [(ngModel)]="b1" name="b1">
+                    </div>
+                    <div class="col-auto">
+                        <h1>+</h1>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control b2" style ="text-align:right" placeholder="Base 2" id="b1" [(ngModel)]="b2" name="b2">
+                    </div>
+                    <div class="col-auto">
+                        <h1>) =</h1>
+                    </div>
+                    <div class="col-auto">
+                        <label class="form-control result" style ="text-align:right">{{ result }}</label>
+                    </div>
+                </form>
 
                 <div class="row">
                     <div class="col-12">
                         <div class="d-grid gap-2">
-                            <button class="btn btn-danger" type="button" (click)="calcular_area()">Calcular area</button>
+                            <button class="btn btn-danger" type="button" (click)="calcular_area()">Calcular</button>
                           </div>
                     </div>
                 </div> 

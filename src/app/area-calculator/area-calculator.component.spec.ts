@@ -31,8 +31,8 @@ describe('AreaCalculatorComponent', () => {
     component.b2 =6
 
     component.calcular_area();
-    result = component.areaT;
+    result = component.result;
 
     expect(result).toBe(10);
- });
+  });
 });

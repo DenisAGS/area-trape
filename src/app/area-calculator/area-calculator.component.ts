@@ -8,7 +8,7 @@ import { area } from '../calcularArea/area';
 })
 export class AreaCalculatorComponent implements OnInit {
 
-  areaT;
+  result;
   a = 0;
   b1 = 0;
   b2 = 0;
@@ -19,8 +19,8 @@ export class AreaCalculatorComponent implements OnInit {
   }
   
   calcular_area(){
-    let area_trapecio= new area();
-    this.areaT = area_trapecio.areaT(this.a, this.b1,this.b2);
+    let area_trapecio= new this.calcular_area();
+    this.result = area_trapecio.area(this.a, this.b1,this.b2);
   } 
 
 }

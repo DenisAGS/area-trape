@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AreaCalculatorComponent } from './area-calculator/area-calculator.component';
 
 @Component({
   selector: 'app-root',
