@@ -1,4 +1,6 @@
 import { async ,ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { By } from '@angular/platform-browser';
 
 import { AreaCalculatorComponent } from './area-calculator.component';
 
@@ -6,12 +8,13 @@ describe('AreaCalculatorComponent', () => {
   let component: AreaCalculatorComponent;
   let fixture: ComponentFixture<AreaCalculatorComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ AreaCalculatorComponent ]
+  beforeEach(async (() => {
+    TestBed.configureTestingModule({
+      declarations: [ AreaCalculatorComponent ],
+      imports: [FormsModule],
     })
     .compileComponents();
-  });
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AreaCalculatorComponent);
@@ -28,9 +31,9 @@ describe('AreaCalculatorComponent', () => {
     let result;
     component.a = 2;
     component.b1 = 4;
-    component.b2 =6
+    component.b2 = 6
 
-    component.calcular_area();
+    component.area;
     result = component.result;
 
     expect(result).toBe(10);

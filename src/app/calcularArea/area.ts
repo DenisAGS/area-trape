@@ -8,7 +8,7 @@ export class area {
     b2=undefined;
   
 
-    areaT(a, b1,b2){
+    calcular(a, b1,b2){
 
         /** 
          * Convertir de valores entrantes a decimales

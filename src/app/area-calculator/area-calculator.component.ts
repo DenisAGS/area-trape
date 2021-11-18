@@ -18,9 +18,9 @@ export class AreaCalculatorComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  calcular_area(){
-    let area_trapecio= new this.calcular_area();
-    this.result = area_trapecio.area(this.a, this.b1,this.b2);
+  area(){
+    let T= new this.area();
+    this.result =T.calcular(this.a, this.b1,this.b2);
   } 
 
 }
