@@ -28,14 +28,14 @@ describe('AreaCalculatorComponent', () => {
 
   it('Should call calcular.area  method', () => {
  
-    let result;
+    let resultado;
     component.a = 2;
     component.b1 = 4;
     component.b2 = 6
 
     component.area;
-    result = component.result;
+    resultado = component.resultado;
 
-    expect(result).toBe(10);
+    expect(resultado).toBe(10);
   });
 });

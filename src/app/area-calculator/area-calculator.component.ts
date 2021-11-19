@@ -7,8 +7,8 @@ import { area } from '../calcularArea/area';
   styleUrls: ['./area-calculator.component.css']
 })
 export class AreaCalculatorComponent implements OnInit {
-
-  result;
+  
+  resultado = 0;
   a = 0;
   b1 = 0;
   b2 = 0;
@@ -16,11 +16,12 @@ export class AreaCalculatorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.resultado=this.a * (this.b1+ this.b2) / 2
   }
   
   area(){
     let T= new this.area();
-    this.result =T.calcular(this.a, this.b1,this.b2);
+    this.resultado =T.calcular(this.a, this.b1,this.b2);
   } 
 
 }
